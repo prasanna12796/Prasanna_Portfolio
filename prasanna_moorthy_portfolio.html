@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prasanna Moorthy A — Portfolio</title>
+
+  <!-- Tailwind Play CDN (small production usage ok for prototypes) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{--accent:#0ea5e9; --accent-2:#fb923c}
+    body{font-family:'Poppins',system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    .glass{backdrop-filter: blur(6px); background: rgba(255,255,255,0.04);}
+    .card-hover:hover{transform: translateY(-6px); box-shadow: 0 20px 40px rgba(2,6,23,0.35);} 
+
+    /* small skill bars */
+    .skill-bar{height:8px; border-radius:999px}
+  </style>
+</head>
+<body class="bg-gradient-to-b from-stone-900 via-stone-900 to-gray-900 text-slate-100">
+
+  <!-- PAGE WRAPPER -->
+  <div class="min-h-screen flex flex-col">
+
+    <!-- NAV -->
+    <nav class="container mx-auto px-6 py-6 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-blue-500 to-orange-400 flex items-center justify-center text-black font-bold">PM</div>
+        <div>
+          <div class="text-white font-semibold">Prasanna Moorthy A</div>
+          <div class="text-slate-400 text-sm">Video Editor • Digital Marketer • UI/UX</div>
+        </div>
+      </a>
+
+      <div class="hidden md:flex items-center gap-6">
+        <a href="#work" class="text-slate-300 hover:text-white">Work</a>
+        <a href="#about" class="text-slate-300 hover:text-white">About</a>
+        <a href="#skills" class="text-slate-300 hover:text-white">Skills</a>
+        <a href="#contact" class="text-slate-300 hover:text-white">Contact</a>
+        <a href="PRASANNA MOORTHY A.pdf" download="Prasanna_Moorthy_Resume.pdf" class="btn btn-outline-light btn-sm">Download CV</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button class="text-slate-300" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg></button>
+      </div>
+
+      <!-- Mobile offcanvas -->
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="mobileNav">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="list-unstyled">
+            <li><a href="#work" class="d-block py-2 text-decoration-none text-light">Work</a></li>
+            <li><a href="#about" class="d-block py-2 text-decoration-none text-light">About</a></li>
+            <li><a href="#skills" class="d-block py-2 text-decoration-none text-light">Skills</a></li>
+            <li><a href="#contact" class="d-block py-2 text-decoration-none text-light">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+
+    <!-- HERO -->
+    <header class="container mx-auto px-6 flex-1 py-12">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+
+        <div class="space-y-6">
+          <p class="text-sm text-slate-400">Hello, I’m</p>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Prasanna Moorthy A</h1>
+          <p class="text-lg text-slate-300 max-w-xl">I craft compelling videos and digital campaigns, combining UI/UX sensibilities with storytelling to drive engagement and results.</p>
+
+          <div class="flex gap-4">
+            <a href="#work" class="btn btn-primary px-4 py-2">View My Work</a>
+            <a href="#contact" class="btn btn-outline-light px-4 py-2">Contact Me</a>
+          </div>
+
+          <div class="mt-6 text-slate-400">
+            <span class="inline-block mr-4">📧 a.prasanna9655@gmail.com</span>
+            <span>|</span>
+            <span class="inline-block ml-4">📱 +91 85250 96336</span>
+          </div>
+
+          <div class="mt-6 flex items-center gap-3">
+            <a href="https://drive.google.com/drive/folders/1LNhY6-n_ZtCe4z2MrEaQbPmkvM4Pyr_b?usp=drive_link" class="text-slate-300 text-sm">YouTube & Editing</a>
+            <a href="https://drive.google.com/drive/folders/1jqX5neVp9LMB0i34Lra6WdPs7D4ZnH9u?usp=drive_link" class="text-slate-300 text-sm">Campaigns</a>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center">
+          <div class="bg-gradient-to-tr from-stone-800 to-stone-700 rounded-2xl p-6 glass card-hover" style="width:360px;">
+            <img src="prasanna.jpg" alt="Headshot" class="w-full rounded-xl mb-4">
+            <div class="text-center">
+              <h3 class="text-xl font-semibold">Prasanna Moorthy A</h3>
+              <p class="text-sm text-slate-400">Video Editor • Digital Marketer • UI/UX Designer</p>
+              <div class="mt-3 d-flex justify-content-center gap-2">
+                <a href="#contact" class="btn btn-sm btn-outline-light me-2">Hire Me</a>
+                <a href="#work" class="btn btn-sm btn-light">See Projects</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container mx-auto px-6 pb-16">
+
+      <!-- ABOUT -->
+      <section id="about" class="mb-12">
+        <div class="grid md:grid-cols-3 gap-8 items-center">
+          <div class="md:col-span-2">
+            <h2 class="text-2xl font-bold mb-3">About Me</h2>
+            <p class="text-slate-300">I’m a motivated and detail-oriented professional pursuing a B.Tech in AI & Data Science at K.L.N. College of Engineering. I specialize in video editing, digital marketing, and UI/UX design. My work blends storytelling, visual craft, and user-centered thinking to help brands and creators communicate clearly and memorably.</p>
+
+            <div class="mt-6 grid sm:grid-cols-2 gap-4">
+              <div class="p-4 bg-stone-800 rounded-lg">
+                <h4 class="text-sm text-slate-300">Education</h4>
+                <p class="text-slate-400 text-sm mt-2">B.Tech — AI & DS, K.L.N. College of Engineering (2020–2026) — CGPA 7.0 up to 6th semester</p>
+              </div>
+              <div class="p-4 bg-stone-800 rounded-lg">
+                <h4 class="text-sm text-slate-300">Experience</h4>
+                <p class="text-slate-400 text-sm mt-2">Freelance Video Editor — 20+ YouTube videos; Digital marketing for Rathan Juniors & AISTHETICA Symposium (2025).</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="p-6 bg-stone-800 rounded-lg">
+            <h4 class="text-sm text-slate-300">Quick Facts</h4>
+            <ul class="mt-3 text-slate-400 text-sm space-y-2">
+              <li>📍 India · Available for remote work</li>
+              <li>🛠️ Tools: Figma, Premiere Pro, Canva</li>
+              <li>🎯 Focus: Story-driven edits, campaign strategy, UX-first design</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="mb-12">
+        <h2 class="text-2xl font-bold mb-4">Skills</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+
+          <div class="p-6 bg-stone-800 rounded-lg">
+            <h5 class="font-semibold mb-3">Video Editing</h5>
+            <p class="text-slate-400 text-sm mb-3">Premiere Pro, After Effects, storytelling, color grading, motion graphics.</p>
+            <div class="w-full bg-stone-700 rounded-full skill-bar overflow-hidden">
+              <div class="bg-gradient-to-r from-sky-500 to-orange-400 h-2" style="width:100%"></div>
+            </div>
+          </div>
+
+          <div class="p-6 bg-stone-800 rounded-lg">
+            <h5 class="font-semibold mb-3">Digital Marketing</h5>
+            <p class="text-slate-400 text-sm mb-3">Content strategy, social media campaigns, analytics basics, poster design.</p>
+            <div class="w-full bg-stone-700 rounded-full skill-bar overflow-hidden">
+              <div class="bg-gradient-to-r from-sky-500 to-orange-400 h-2" style="width:100%"></div>
+            </div>
+          </div>
+
+          <div class="p-6 bg-stone-800 rounded-lg">
+            <h5 class="font-semibold mb-3">UI / UX</h5>
+            <p class="text-slate-400 text-sm mb-3">Figma, wireframing, prototyping, accessibility basics.</p>
+            <div class="w-full bg-stone-700 rounded-full skill-bar overflow-hidden">
+              <div class="bg-gradient-to-r from-sky-500 to-orange-400 h-2" style="width:100%"></div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="mb-12">
+        <h2 class="text-2xl font-bold mb-4">Experience</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+
+          <div class="p-5 bg-stone-800 rounded-lg">
+            <h5 class="font-semibold">Video Editing Freelancer</h5>
+            <p class="text-slate-400 text-sm">Independent Projects · 2025</p>
+            <ul class="mt-3 text-slate-300 text-sm">
+              <li>• Edited 20+ YouTube videos across multiple channels.</li>
+              <li>• Edited official Central Government video content.</li>
+              <li class="mt-2"><a class="text-sky-400 text-sm" href="https://drive.google.com/drive/folders/1LNhY6-n_ZtCe4z2MrEaQbPmkvM4Pyr_b?usp=drive_link">Watch samples</a></li>
+            </ul>
+          </div>
+
+          <div class="p-5 bg-stone-800 rounded-lg">
+            <h5 class="font-semibold">Digital Marketing — Rathan Juniors</h5>
+            <p class="text-slate-400 text-sm">2025</p>
+            <p class="text-slate-300 text-sm mt-2">Designed and executed social media campaigns and creatives for a preschool to increase local awareness and engagement.</p>
+            <p class="mt-2"><a class="text-sky-400 text-sm" href="https://drive.google.com/drive/folders/1jqX5neVp9LMB0i34Lra6WdPs7D4ZnH9u?usp=drive_link">See campaign</a></p>
+          </div>
+
+          <div class="p-5 bg-stone-800 rounded-lg">
+            <h5 class="font-semibold">Digital Marketing — AISTHETICA Symposium</h5>
+            <p class="text-slate-400 text-sm">2025</p>
+            <p class="text-slate-300 text-sm mt-2">Led poster & video campaign for the AI & DS department symposium — design, posting calendar, and engagement analysis.</p>
+            <p class="mt-2"><a class="text-sky-400 text-sm" href="https://drive.google.com/drive/folders/1-mWP3L_TdARQINbg4sNnXyn930M7ORrF?usp=drive_link">Explore campaign</a></p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PROJECTS / PORTFOLIO -->
+      <section id="work" class="mb-12">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-2xl font-bold">Portfolio</h2>
+          <div class="btn-group" role="group">
+            <button class="btn btn-sm btn-outline-light active" onclick="filterProjects('all')">All</button>
+            <button class="btn btn-sm btn-outline-light" onclick="filterProjects('video')">Video</button>
+            <button class="btn btn-sm btn-outline-light" onclick="filterProjects('marketing')">Marketing</button>
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6" id="projectsGrid">
+
+          <!-- Project card (example) -->
+          <div class="project-item video p-3 bg-stone-800 rounded-lg">
+            <div class="ratio ratio-16x9 rounded overflow-hidden mb-3">
+              <iframe src="https://youtu.be/3SRXAZq9cK8?si=V8JGB-_4xIba-a80" title="YouTube video" allowfullscreen></iframe>
+            </div>
+            <h5 class="font-semibold">YouTube Series - Movie Reviews</h5>
+            <p class="text-slate-400 text-sm">Cutting, color grading, and motion graphics for a recurring reviews series.</p>
+            <div class="mt-3 d-flex justify-content-between">
+              <button class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#projectModal" onclick="openProject(this,'YouTube Series - Movie Reviews','Edited 20+ episodes with consistent visual language. Tools: Premiere Pro, After Effects.','https://drive.google.com/drive/folders/1LNhY6-n_ZtCe4z2MrEaQbPmkvM4Pyr_b?usp=drive_link')">Details</button>
+              <a href="https://drive.google.com/drive/folders/1LNhY6-n_ZtCe4z2MrEaQbPmkvM4Pyr_b?usp=drive_link" class="btn btn-sm btn-outline-light">Drive</a>
+            </div>
+          </div>
+
+          <div class="project-item marketing p-3 bg-stone-800 rounded-lg">
+            <img src="rathan.png" class="w-full rounded mb-3" alt="poster">
+            <h5 class="font-semibold">Rathan Juniors — Social Campaign</h5>
+            <p class="text-slate-400 text-sm">Poster design and social scheduling to increase local visibility.</p>
+            <div class="mt-3 d-flex justify-content-between">
+              <button class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#projectModal" onclick="openProject(this,'Rathan Juniors Social Campaign','Poster design, scheduling, and reporting. Increased local engagement through targeted creatives.','https://drive.google.com/drive/folders/1jqX5neVp9LMB0i34Lra6WdPs7D4ZnH9u?usp=drive_link')">Details</button>
+              <a href="https://drive.google.com/drive/folders/1jqX5neVp9LMB0i34Lra6WdPs7D4ZnH9u?usp=drive_link" class="btn btn-sm btn-outline-light">Drive</a>
+            </div>
+          </div>
+
+          <div class="project-item marketing p-3 bg-stone-800 rounded-lg">
+            <img src="aesthetica.png" class="w-full rounded mb-3" alt="symposium">
+            <h5 class="font-semibold">AISTHETICA Symposium Campaign</h5>
+            <p class="text-slate-400 text-sm">Full campaign — posters, reels, and edit packages for event promotion.</p>
+            <div class="mt-3 d-flex justify-content-between">
+              <button class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#projectModal" onclick="openProject(this,'AISTHETICA Symposium Campaign','Created visual assets and campaign calendar. Managed posting & engagement analysis.','https://drive.google.com/drive/folders/1-mWP3L_TdARQINbg4sNnXyn930M7ORrF?usp=drive_link')">Details</button>
+              <a href="https://drive.google.com/drive/folders/1-mWP3L_TdARQINbg4sNnXyn930M7ORrF?usp=drive_link" class="btn btn-sm btn-outline-light">Drive</a>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="mb-12">
+        <h2 class="text-2xl font-bold mb-4">Contact</h2>
+        <div class="grid md:grid-cols-1 gap-6">
+          <div class="p-6 bg-stone-800 rounded-lg">
+            <h5 class="font-semibold mb-3">Get in touch</h5>
+            <p class="text-slate-400 text-sm">Interested in working together? I’m available for freelance and full-time roles.</p>
+            <ul class="mt-4 text-slate-300 text-sm space-y-2">
+              <li>📧 a.prasanna9655@gmail.com</li>
+              <li>📱 +91 85250 96336</li>
+              <li>📍 India — Open to remote work</li>
+            </ul>
+            <div class="mt-4">
+              <a href="https://www.linkedin.com/" target="_blank" class="me-2 text-slate-300">LinkedIn</a>
+              <a href="https://www.youtube.com/" target="_blank" class="me-2 text-slate-300">YouTube</a>
+              <a href="https://instagram.com/" target="_blank" class="text-slate-300">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 border-t border-stone-800 py-6 mt-auto">
+      <div class="container mx-auto px-6 text-center text-slate-400">
+        © 2025 Prasanna Moorthy A · Built with Tailwind & Bootstrap · <a href="#" class="text-sky-400">Privacy</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal fade" id="projectModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="projectModalTitle">Project Title</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body" id="projectModalBody">
+          <p class="text-slate-300">Project description...</p>
+          <p><a id="projectModalLink" href="#" class="text-sky-400">View folder</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Simple project filter
+    function filterProjects(tag){
+      const items = document.querySelectorAll('.project-item');
+      items.forEach(i=>{
+        if(tag==='all') i.style.display = 'block';
+        else i.style.display = i.classList.contains(tag) ? 'block' : 'none';
+      });
+      // set active button
+      document.querySelectorAll('.btn-group button').forEach(b=>b.classList.remove('active'));
+      event && event.currentTarget && event.currentTarget.classList.add('active');
+    }
+
+    // Open project modal with details
+    function openProject(el, title, desc, link){
+      document.getElementById('projectModalTitle').innerText = title || 'Project';
+      document.getElementById('projectModalBody').querySelector('p').innerText = desc || '';
+      const a = document.getElementById('projectModalLink');
+      if(link){ a.href = link; a.style.display = 'inline'; }
+      else { a.style.display = 'none'; }
+    }
+
+    // small performance: hide loader etc
+    document.addEventListener('DOMContentLoaded', ()=>{
+      // nothing for now
+    });
+  </script>
+
+</body>
+</html>
